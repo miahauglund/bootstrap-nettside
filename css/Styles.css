@@ -14,16 +14,16 @@ section {
 }
 /* ================= HERO-SEKSJON ================= */
 .hero {
-    padding: 100px 0;  /* Øker luft rundt Hero-seksjonen */
+    padding: 100px 0;  
     text-align: center;
-    background-color: #ebecef; /* Juster bakgrunnsfargen om ønskelig */
+    background-color: #ebecef; 
 }
 
 .hero h1 {
-    margin-top: 50px; /* Øker avstanden fra toppen av seksjonen */
+    margin-top: 50px; 
     font-size: 3rem;
     font-weight: 400;
-    margin-bottom: 20px; /* Øker avstanden mellom overskriften og beskrivelsen */
+    margin-bottom: 20px; 
     color: #1F2A2F; /* Mørk farge for overskriften */
 }
 
@@ -32,6 +32,20 @@ section {
     font-weight: 300; /* Tynnere tekst for mer luft */
     color: #555; /* Lysere farge for beskrivelsen */
 }
+.btn-primary {
+    background-color: #1F2A2F;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #DEDFE5;
+    color: #1F2A2F;
+}
+
 
 /* ================= BILDER ================= */
 img.rounded-circle {
@@ -40,7 +54,7 @@ img.rounded-circle {
 
 /* ================= NAVIGASJON ================= */
 .navbar {
-    background-color: #DEDFE5; /* Endre bakgrunnsfargen til ønsket farge */
+    background-color: #DEDFE5; /* Endre bakgrunnsfargen */
     
     top: 0;
     z-index: 1020;
