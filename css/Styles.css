@@ -12,6 +12,26 @@ section {
     background-color: #ECEBEF;
     padding: 40px 0;
 }
+/* ================= HERO-SEKSJON ================= */
+.hero {
+    padding: 100px 0;  /* Øker luft rundt Hero-seksjonen */
+    text-align: center;
+    background-color: #ebecef; /* Juster bakgrunnsfargen om ønskelig */
+}
+
+.hero h1 {
+    margin-top: 50px; /* Øker avstanden fra toppen av seksjonen */
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 20px; /* Øker avstanden mellom overskriften og beskrivelsen */
+    color: #1F2A2F; /* Mørk farge for overskriften */
+}
+
+.hero p {
+    font-size: 1.25rem; /* Juster fontstørrelse for beskrivelsen */
+    font-weight: 300; /* Tynnere tekst for mer luft */
+    color: #555; /* Lysere farge for beskrivelsen */
+}
 
 /* ================= BILDER ================= */
 img.rounded-circle {
@@ -20,18 +40,20 @@ img.rounded-circle {
 
 /* ================= NAVIGASJON ================= */
 .navbar {
-    position: sticky;
+    background-color: #DEDFE5; /* Endre bakgrunnsfargen til ønsket farge */
+    
     top: 0;
     z-index: 1020;
 }
 
 .navbar-brand {
-    font-weight: 600;
-    color: #1F2A2F;
+    font-weight: 300;
+    color: #DEDFE5;
 }
 
 .navbar-nav .nav-link {
-    color: #1F2A2F;
+    color: #DEDFE5;
+    font-weight: 300;
 }
 
 .navbar-nav .nav-link:hover {
@@ -39,7 +61,7 @@ img.rounded-circle {
 }
 
 .nav-link:hover {
-    color: #1F2A2F;
+    color: #DEDFE5;
     text-decoration: underline;
 }
 
@@ -53,7 +75,7 @@ img.rounded-circle {
 
 .card:hover {
     background-color: #1F2A2F;
-    color: #ECEBEF; 
+    color: #1F2A2F; 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     transform: scale(1.05); 
 }
