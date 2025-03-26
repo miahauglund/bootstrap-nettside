@@ -161,6 +161,21 @@ img.rounded-circle {
     opacity: 1;
     transform: translateY(0);
 }
+/* Øk marginen under ikonene */
+.scroll-card i {
+    margin-bottom: 20px; /* Legg til mer luft under ikonene */
+}
+
+/* Øk marginen mellom ikonene og teksten */
+.scroll-card h5 {
+    margin-top: 15px; /* Legg til mer luft over teksten */
+    margin-bottom: 15px; /* Legg til mer luft under teksten */
+}
+
+/* Øk padding i hver kolonne */
+.scroll-card {
+    padding: 20px; /* Legg til mer plass rundt hvert element */
+}
 
 
 /* ================= KARUSELL ================= */
@@ -190,7 +205,6 @@ img.rounded-circle {
     object-fit: cover;
 }
 
-/* CSS for scroll-bevegelse */
 .scroll-card {
     transform: translateY(100px); /* Starter under synlig område */
     opacity: 0; /* Starter som usynlig */
@@ -202,9 +216,6 @@ img.rounded-circle {
     transform: translateY(0); /* Flytt tilbake til startposisjonen */
     opacity: 1; /* Gjør det synlig */
 }
-
-
-
 
 
 /* ================= FOOTER ================= */

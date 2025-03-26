@@ -12,14 +12,13 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-
     <!-- Font Awesome (Ikoner) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <!-- Egen CSS -->
     <link rel="stylesheet" href="css/Styles.css">
 </head>
- 
+
 <body>
 
   <!-- Toppmeny -->
@@ -36,7 +35,6 @@
         
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <!-- Hjem knapp med tekst -->
                 <li class="nav-item">
                     <a class="nav-link text-white" href="Nettsiden min.html">Hjem</a>
                 </li>
@@ -51,7 +49,7 @@
 <!-- Hero-seksjon -->
 <section class="hero text-center py-5">
     <h1 class="display-4 text-dark">Om meg</h1>
-</section> 
+</section>
 
 <!-- Om meg seksjon -->
 <section class="container mt-5 p-4 rounded" style="background-color: #ebecef;">
@@ -61,6 +59,13 @@
             <div class="profile-container bg-dark p-3 rounded-circle mx-auto" style="width: 200px; height: 200px;">
                 <img src="Image/profilbilde.jpg" alt="Profilbilde" class="rounded-circle shadow img-fluid">
             </div>
+
+            <!-- Kontakt meg seksjon under profilbildet -->
+            <section class="text-center mt-2"> <!-- Reduced margin-top -->
+                <a href="mailto:mia.hauglund@gmail.com" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Kontakt meg
+                </a>
+            </section>
         </div>
 
         <!-- Tekst om meg -->
@@ -73,40 +78,56 @@
     </div>
 </section>
 
-
 <!-- Ferdigheter-seksjon -->
 <section class="container mt-5 p-4 rounded" style="background-color: #ebecef; color: #1F2A2F;">
     <h3 class="text-center fw-bold">Mine ferdigheter</h3>
     <div class="row text-center mt-3">
-        <div class="col-md-3">
+        <div class="col-md-3 scroll-card">
             <i class="fas fa-paint-brush fa-3x mb-2" style="color: #1F2A2F;"></i>
             <h5 style="color: #1F2A2F;">Grafisk design</h5>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 scroll-card">
             <i class="fas fa-code fa-3x mb-2" style="color: #1F2A2F;"></i>
             <h5 style="color: #1F2A2F;">Webutvikling</h5>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 scroll-card">
             <i class="fas fa-camera fa-3x mb-2" style="color: #1F2A2F;"></i>
             <h5 style="color: #1F2A2F;">Fotografi</h5>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 scroll-card">
             <i class="fas fa-video fa-3x mb-2" style="color: #1F2A2F;"></i>
             <h5 style="color: #1F2A2F;">Videoredigering</h5>
         </div>
     </div>
 </section>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const scrollCards = document.querySelectorAll(".scroll-card");
 
+        // Funksjon for å sjekke posisjonen på kortene
+        function checkScroll() {
+            scrollCards.forEach((card) => {
+                const cardTop = card.getBoundingClientRect().top;  // Kortets posisjon i forhold til vinduet
+                const windowHeight = window.innerHeight;  // Høyden på vinduet
 
-<!-- Kontakt-meg seksjon -->
-<section class="container text-center mt-5" style="background-color: #ebecef;">
-    <h3 class="fw-bold">Kontakt meg</h3>
-    <p>Har du et prosjekt eller ønsker å samarbeide? Ta gjerne kontakt!</p>
-    <a href="mailto:mia.hauglund@gmail.com" class="btn btn-dark mt-2">
-        <i class="fas fa-envelope"></i> Send e-post
-    </a>
-</section>
+                // Hvis kortet er synlig, legg til "show"-klassen, ellers fjern den
+                if (cardTop < windowHeight - 100) {
+                    card.classList.add("show");
+                } else {
+                    card.classList.remove("show");
+                }
+            });
+        }
+
+        // Lytter på scroll-hendelsen og kjører funksjonen ved scroll
+        window.addEventListener("scroll", checkScroll);
+        checkScroll();  // Kjør funksjonen én gang ved lastingen av siden for å fange synlige kort
+    });
+</script>
+
+</body>
+</html>
 
 
     <!-- Footer -->
