@@ -81,50 +81,79 @@ img.rounded-circle {
 
 /* ================= INFO-BOKSER ================= */
 
+/* Grunnleggende overgangseffekter for kortene */
 .card {
-    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, transform 0.3s ease-out;
     text-decoration: none; 
     color: inherit; 
+    border: none; /* Fjerner den synlige kanten */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtil skygge rundt kortet */
 }
 
+/* Hover-effekt for kortene */
 .card:hover {
     background-color: #1F2A2F;
-    color: #1F2A2F; 
+    color: #ECEBEF;  /* Endrer tekstfarge på hover */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05); 
+    transform: scale(1.05) translateY(-5px);  /* Løft kortet litt ved hover */
 }
 
+/* Størrelse og stil for ikoner i kortene */
+.card i {
+    margin-bottom: 10px;
+    font-size: 6rem; /* Standard størrelse på ikoner */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Øk ikonstørrelsen og endre farge ved hover på hele kortet */
+.card:hover i {
+    color: #ECEBEF; /* Ikonene blir hvite på hover */
+    font-size: 7rem; /* Øker størrelsen på ikonene ved hover */
+}
+
+/* Spesifik font-størrelse for Instagram og e-post ikoner */
+.card-body .fa-instagram, .card-body .fa-envelope {
+    font-size: 6rem; /* Større ikoner for disse spesifikke ikonene */
+}
+
+/* Overgangseffekt for overskriften */
 .card h5 {
     transition: color 0.3s ease;
 }
 
+/* Endre farge på overskriften (h5) ved hover */
 .card:hover h5 {
-    color: #ECEBEF; 
+    color: #ECEBEF;
 }
 
-.card i {
-    transition: color 0.3s ease;
-}
-
-.card:hover i {
-    color: #ECEBEF; 
-}
+/* Fjern standard lenkefarge og tekstdekorasjon */
 .card-link {
     text-decoration: none; 
     color: inherit; 
 }
 
+/* Stil for bilde i toppen av kortet */
 .card-img-top {
     height: 200px;
     object-fit: cover;
 }
 
+/* Juster innhold i kortene */
 .card-body {
-    display: chrome;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Sørger for at innholdet holder seg i midten av kortet */
+    text-align: center; /* Teksten blir sentrert */
+    padding: 1rem; /* Juster padding */
 }
+
+/* Juster høyde på iframe hvis det er nødvendig */
+iframe {
+    width: 100%;
+    height:
+
 
 /* ================= KARUSELL ================= */
 .carousel-caption {

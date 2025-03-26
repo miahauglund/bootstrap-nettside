@@ -1,56 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Min Personlige Side</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+    <!-- Font Awesome (Ikoner) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Egen CSS -->
+    <link rel="stylesheet" href="css/Styles.css">
 </head>
+ 
 <body>
 
-    <!-- Toppmeny -->
+   <!-- Toppmeny -->
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1F2A2F;">
     <div class="container">
-        <a class="navbar-brand" href="#">Hauglundmultimedie</a>
+        <!-- Klikkbar tekst som fører til hovedsiden -->
+        <a class="navbar-brand" href="Nettsiden min.html">Hauglundmultimedie</a>
+
+        <!-- Navigasjonsknapper for menyen -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link text-white" href="https://www.instagram.com/hauglundmultimedie" target="_blank">Instagram</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://www.Bomuldsfabriken.no" target="_blank">Bomuldsfabriken</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="https://hauglundmultimedie.no" target="_blank">hauglundmultimedie</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="Om meg.html">Om meg</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="https://www.instagram.com/hauglundmultimedie" target="_blank">Instagram</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="https://hauglundmultimedie.no" target="_blank">Hauglundmultimedie</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-<div class="container text-center">
-    <header class="my-4">
-        <h1>Om meg <3 </h1>
-    </header>
+<!-- Hero-seksjon -->
+<section class="hero text-center py-5">
+    <h1 class="display-4 text-dark">Om meg</h1>
+</section> 
 
-    <section class="container text-center mt-5">
+<!-- Om meg seksjon -->
+<section class="container mt-5 p-4 rounded" style="background-color: #ebecef;">
+    <div class="row align-items-center">
         <!-- Profilbilde -->
-        <div class="profile-container mx-auto bg-dark p-3 rounded-circle" style="width: 200px; height: 200px;">
-            <img src="Image/profilbilde.jpg" alt="Profilbilde" class="rounded-circle shadow img-fluid">
+        <div class="col-md-4 text-center">
+            <div class="profile-container bg-dark p-3 rounded-circle mx-auto" style="width: 200px; height: 200px;">
+                <img src="Image/profilbilde.jpg" alt="Profilbilde" class="rounded-circle shadow img-fluid">
+            </div>
         </div>
 
         <!-- Tekst om meg -->
-        <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-                <h2>Mia Hauglund</h2>
-                <p>Jeg er 22 år gammel og kommer fra Grimstad. Jeg har en bachelorgrad i Visuell kunst og formidling ved Universitetet i Agder i Kristiansand. Nå er jeg student på Multimedieteknologi og design bachelor i Grimstad.</p>
-                <p>Jeg liker å jobbe kreativt og praktisk både alene og sammen med andre. I min bachelorgrad har jeg lært hvordan man skal formidle et produkt/kunstverk til andre og vise hvordan prosessen har vært.</p>
-                <a href="Nettsiden min.html" class="btn btn-primary mt-3">Tilbake</a>
-            </div>
-
+        <div class="col-md-8">
+            <h2 class="fw-bold text-dark">Mia Hauglund</h2>
+            <p class="text-dark">Hei! Jeg heter Mia, er 22 år og kommer fra Grimstad. Jeg har en bachelorgrad i Visuell kunst og formidling fra Universitetet i Agder, og nå studerer jeg Multimedieteknologi og design.</p>
+            <p class="text-dark">Jeg brenner for kreative løsninger og elsker å kombinere kunst og teknologi for å skape engasjerende visuelle uttrykk. Jeg trives både med å jobbe selvstendig og i team, og jeg liker å eksperimentere med nye teknikker innen design, foto og webutvikling.</p>
+            <a href="Nettsiden min.html" class="btn btn-primary mt-3">Tilbake</a>
         </div>
-    </section>
-</div>
+    </div>
+</section>
 
-    
+
+<!-- Ferdigheter-seksjon -->
+<section class="container mt-5 p-4 rounded" style="background-color: #ebecef; color: #1F2A2F;">
+    <h3 class="text-center fw-bold">Mine ferdigheter</h3>
+    <div class="row text-center mt-3">
+        <div class="col-md-3">
+            <i class="fas fa-paint-brush fa-3x mb-2" style="color: #1F2A2F;"></i>
+            <h5 style="color: #1F2A2F;">Grafisk design</h5>
+        </div>
+        <div class="col-md-3">
+            <i class="fas fa-code fa-3x mb-2" style="color: #1F2A2F;"></i>
+            <h5 style="color: #1F2A2F;">Webutvikling</h5>
+        </div>
+        <div class="col-md-3">
+            <i class="fas fa-camera fa-3x mb-2" style="color: #1F2A2F;"></i>
+            <h5 style="color: #1F2A2F;">Fotografi</h5>
+        </div>
+        <div class="col-md-3">
+            <i class="fas fa-video fa-3x mb-2" style="color: #1F2A2F;"></i>
+            <h5 style="color: #1F2A2F;">Videoredigering</h5>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Kontakt-meg seksjon -->
+<section class="container text-center mt-5" style="background-color: #ebecef;">
+    <h3 class="fw-bold">Kontakt meg</h3>
+    <p>Har du et prosjekt eller ønsker å samarbeide? Ta gjerne kontakt!</p>
+    <a href="mailto:mia.hauglund@gmail.com" class="btn btn-dark mt-2">
+        <i class="fas fa-envelope"></i> Send e-post
+    </a>
+</section>
+
+
     <!-- Footer -->
 <footer class="text-center py-4 bg-dark text-light">
     <p>© 2025 Min Personlige Side. Alle rettigheter forbeholdt.</p>
