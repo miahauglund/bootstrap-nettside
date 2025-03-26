@@ -88,6 +88,7 @@ img.rounded-circle {
     color: inherit; 
     border: none; /* Fjerner den synlige kanten */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtil skygge rundt kortet */
+    border-radius: 0.75rem; /* Beholder avrundede kanter på kortet */
 }
 
 /* Hover-effekt for kortene */
@@ -136,6 +137,7 @@ img.rounded-circle {
 .card-img-top {
     height: 200px;
     object-fit: cover;
+    border-radius: 0.75rem 0.75rem 0 0; /* Sørger for at bildet har avrundede kanter på toppen */
 }
 
 /* Juster innhold i kortene */
@@ -145,14 +147,7 @@ img.rounded-circle {
     justify-content: center;
     align-items: center;
     height: 100%; /* Sørger for at innholdet holder seg i midten av kortet */
-    text-align: center; /* Teksten blir sentrert */
-    padding: 1rem; /* Juster padding */
-}
-
-/* Juster høyde på iframe hvis det er nødvendig */
-iframe {
-    width: 100%;
-    height:
+    text-align: center; /* Teksten blir sent*
 
 
 /* ================= KARUSELL ================= */
