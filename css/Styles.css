@@ -147,8 +147,8 @@ img.rounded-circle {
     justify-content: center;
     align-items: center;
     height: 100%; /* Sørger for at innholdet holder seg i midten av kortet */
-    text-align: center; /* Teksten blir sent*
-
+    text-align: center; /* Teksten blir sent*/
+}
 
 /* ================= KARUSELL ================= */
 .carousel-caption {
