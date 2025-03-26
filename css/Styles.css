@@ -52,6 +52,7 @@ img.rounded-circle {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+
 /* ================= NAVIGASJON ================= */
 .navbar {
     background-color: #DEDFE5; /* Endre bakgrunnsfargen */
@@ -87,8 +88,8 @@ img.rounded-circle {
     text-decoration: none; 
     color: inherit; 
     border: none; /* Fjerner den synlige kanten */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtil skygge rundt kortet */
-    border-radius: 0.75rem; /* Beholder avrundede kanter på kortet */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 0.75rem; 
 }
 
 /* Hover-effekt for kortene */
@@ -122,12 +123,12 @@ img.rounded-circle {
     transition: color 0.3s ease;
 }
 
-/* Endre farge på overskriften (h5) ved hover */
+
 .card:hover h5 {
     color: #ECEBEF;
 }
 
-/* Fjern standard lenkefarge og tekstdekorasjon */
+
 .card-link {
     text-decoration: none; 
     color: inherit; 
@@ -137,7 +138,7 @@ img.rounded-circle {
 .card-img-top {
     height: 200px;
     object-fit: cover;
-    border-radius: 0.75rem 0.75rem 0 0; /* Sørger for at bildet har avrundede kanter på toppen */
+    border-radius: 0.75rem 0.75rem 0 0; 
 }
 
 /* Juster innhold i kortene */
@@ -146,9 +147,21 @@ img.rounded-circle {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%; /* Sørger for at innholdet holder seg i midten av kortet */
-    text-align: center; /* Teksten blir sent*/
+    height: 100%; 
+    text-align: center; 
 }
+.scroll-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Når elementet blir synlig */
+.scroll-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* ================= KARUSELL ================= */
 .carousel-caption {
@@ -176,6 +189,23 @@ img.rounded-circle {
     height: 180px;
     object-fit: cover;
 }
+
+/* CSS for scroll-bevegelse */
+.scroll-card {
+    transform: translateY(100px); /* Starter under synlig område */
+    opacity: 0; /* Starter som usynlig */
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out; /* Glidende animasjon */
+}
+
+/* Når kortet er synlig, endres dets posisjon og blir synlig */
+.scroll-card.show {
+    transform: translateY(0); /* Flytt tilbake til startposisjonen */
+    opacity: 1; /* Gjør det synlig */
+}
+
+
+
+
 
 /* ================= FOOTER ================= */
 footer {
