@@ -30,7 +30,7 @@ section {
 .hero p {
     font-size: 1.25rem; /* Juster fontstørrelse for beskrivelsen */
     font-weight: 300; /* Tynnere tekst for mer luft */
-    color: #555; /* Lysere farge for beskrivelsen */
+    color:#1F2A2F ; /* Lysere farge for beskrivelsen */
 }
 .btn-primary {
     background-color: #1F2A2F;
@@ -43,13 +43,13 @@ section {
 
 .btn-primary:hover {
     background-color: #DEDFE5;
-    color: #1F2A2F;
+    color: #1F2A2F; /* OK, men vurder font-weight: 500 eller outline? */
 }
 
 
 /* ================= BILDER ================= */
 img.rounded-circle {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(116, 80, 80, 0.1);
 }
 
 
@@ -67,13 +67,13 @@ img.rounded-circle {
 }
 
 .navbar-nav .nav-link {
-    color: #DEDFE5;
-    font-weight: 300;
+    color: #1F2A2F; /* eller en mørkere gråtone */
 }
 
 .navbar-nav .nav-link:hover {
     color: #ECEBEF;
 }
+
 
 .nav-link:hover {
     color: #DEDFE5;
@@ -206,15 +206,15 @@ img.rounded-circle {
 }
 
 .scroll-card {
-    transform: translateY(100px); /* Starter under synlig område */
-    opacity: 0; /* Starter som usynlig */
-    transition: transform 0.6s ease-out, opacity 0.6s ease-out; /* Glidende animasjon */
+    opacity: 0;
+    transform: translateY(100px); 
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    padding: 20px;
 }
 
-/* Når kortet er synlig, endres dets posisjon og blir synlig */
 .scroll-card.show {
-    transform: translateY(0); /* Flytt tilbake til startposisjonen */
-    opacity: 1; /* Gjør det synlig */
+    transform: translateY(0);
+    opacity: 1;
 }
 
 
@@ -243,7 +243,9 @@ h5 {
 .footer-icons a {
     text-decoration: none !important;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 
 /* ================= RESPONSIV DESIGN ================= */
 @media (max-width: 992px) {
