@@ -28,9 +28,9 @@ section {
 }
 
 .hero p {
-    font-size: 1.25rem; /* Juster fontstørrelse for beskrivelsen */
-    font-weight: 300; /* Tynnere tekst for mer luft */
-    color:#1F2A2F ; /* Lysere farge for beskrivelsen */
+    font-size: 1.25rem; 
+    font-weight: 300; 
+    color:#1F2A2F ; 
 }
 .btn-primary {
     background-color: #1F2A2F;
@@ -43,7 +43,7 @@ section {
 
 .btn-primary:hover {
     background-color: #DEDFE5;
-    color: #1F2A2F; /* OK, men vurder font-weight: 500 eller outline? */
+    color: #1F2A2F; 
 }
 
 
@@ -87,7 +87,7 @@ img.rounded-circle {
     transition: background-color 0.3s ease-out, color 0.3s ease-out, box-shadow 0.3s ease-out, transform 0.3s ease-out;
     text-decoration: none; 
     color: inherit; 
-    border: none; /* Fjerner den synlige kanten */
+    border: none; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     border-radius: 0.75rem; 
 }
@@ -97,7 +97,7 @@ img.rounded-circle {
     background-color: #1F2A2F;
     color: #ECEBEF;  /* Endrer tekstfarge på hover */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05) translateY(-5px);  /* Løft kortet litt ved hover */
+    transform: scale(1.05) translateY(-5px);  /
 }
 
 /* Størrelse og stil for ikoner i kortene */
@@ -109,7 +109,7 @@ img.rounded-circle {
 
 /* Øk ikonstørrelsen og endre farge ved hover på hele kortet */
 .card:hover i {
-    color: #ECEBEF; /* Ikonene blir hvite på hover */
+    color: #ECEBEF; 
     font-size: 7rem; /* Øker størrelsen på ikonene ved hover */
 }
 
@@ -163,13 +163,13 @@ img.rounded-circle {
 }
 /* Øk marginen under ikonene */
 .scroll-card i {
-    margin-bottom: 20px; /* Legg til mer luft under ikonene */
+    margin-bottom: 20px; 
 }
 
 /* Øk marginen mellom ikonene og teksten */
 .scroll-card h5 {
-    margin-top: 15px; /* Legg til mer luft over teksten */
-    margin-bottom: 15px; /* Legg til mer luft under teksten */
+    margin-top: 15px; 
+    margin-bottom: 15px; 
 }
 
 /* Øk padding i hver kolonne */
